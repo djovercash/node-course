@@ -1,8 +1,8 @@
 const request = require('request');
-const key = 'dedac8699c06b18d90be6c3fc8be82ee';
+const key = '';
 const url = `https://api.darksky.net/forecast/${key}/37.8267,-122.4233?units=si`;
 
-const geoKey = 'pk.eyJ1IjoiZG92ZXJjYXNoIiwiYSI6ImNqdzZmMGh3bjE2ZzM0OWw5OGZ5N3pzdHMifQ.Y_rImNsisZ7Li7T_abh3sQ';
+const geoKey = '';
 const geoUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
 
 request({ url: url, json: true }, (error, res) => {
