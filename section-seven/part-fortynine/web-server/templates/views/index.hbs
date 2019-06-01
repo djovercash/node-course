@@ -1,0 +1,18 @@
+<!-- We do not buid a complete html document like in a view -->
+<!-- We only build the elements we need -->
+<!-- To call a partial in a view, use two curly brackets with a greater than symbol
+around the name of file -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/css/style.css">
+		<title>Index</title>
+	</head>
+	<body>
+		{{>header}}
+		{{>footer}}
+	</body>
+	<script type="text/javascript" src="/js/app.js"></script>
+</html>
