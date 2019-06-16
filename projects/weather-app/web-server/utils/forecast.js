@@ -2,7 +2,7 @@ const request = require('request');
 
 // Fetch forecast
 const forecast = ({ lat = '', long = '' } = {}, callback) => {
-	const forecastKey = '';
+	const forecastKey = 'dedac8699c06b18d90be6c3fc8be82ee';
 	const forecastUrl = `https://api.darksky.net/forecast/${forecastKey}/`;
 
 	request({ url: `${forecastUrl}${encodeURIComponent(`${lat}, ${long}`)}`, json: true}, (error, { body }) => {
