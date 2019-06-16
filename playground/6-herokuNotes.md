@@ -7,6 +7,8 @@
 	* Adds ssh key to heroku
 * `heroku create [NAME]`
 	* Creates a new heroku project (run from root directory of your project). Name must be unique
+* `git push heroku master`
+	* Deploy to Heroku
 
 
 ## To Deploy
