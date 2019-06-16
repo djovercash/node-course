@@ -2,7 +2,7 @@ const request = require('request');
 
 // Fetch geocode information
 const geocode = (location, callback) => {
-	const geoKey = 'pk.eyJ1IjoiZG92ZXJjYXNoIiwiYSI6ImNqdzZmMGh3bjE2ZzM0OWw5OGZ5N3pzdHMifQ.Y_rImNsisZ7Li7T_abh3sQ';
+	const geoKey = '';
 	const geoUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
 
 	request( {url: `${geoUrl}${encodeURIComponent(location)}.json?access_token=${geoKey}&limit=1`, json: true }, (error, { body }) => {
